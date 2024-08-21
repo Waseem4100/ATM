@@ -1,3 +1,5 @@
+#! /usr/bin/env Node
+
 import inquirer from "inquirer"
 import chalk from "chalk"
 
@@ -114,6 +116,7 @@ if (pin_answer.pincode === "1234" ){
         name : "condition",
         type : "confirm",
         message : "do you want to continue",
+        default : true,
     })
 
     

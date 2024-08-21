@@ -1,3 +1,4 @@
+#! /usr/bin/env Node
 import inquirer from "inquirer";
 import chalk from "chalk";
 let myBalance = 0;
@@ -89,6 +90,7 @@ if (pin_answer.pincode === "1234") {
             name: "condition",
             type: "confirm",
             message: "do you want to continue",
+            default: true,
         });
         if (while_answer.condition === false) {
             iscontinue = false;
